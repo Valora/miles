@@ -62,7 +62,7 @@ def get_format_pace(average_speed: float) -> str:
 if __name__ == "__main__":
     args = sys.argv
     if len(args) != 2:
-        sys.exit("args is not right, e.g. python running_page.py yihong0618/running_page")
+        sys.exit("args is not right, e.g. python running_page.py Valora/running_page")
 
     running_page_repo = args[1]
     activities = get_activities(running_page_repo)
