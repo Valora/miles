@@ -54,6 +54,8 @@ def refresh_running_csv(activities: list):
   logger.info("done")
 
 def get_format_pace(average_speed: float) -> str:
+  if (average_speed == 0.0):
+    return "0:00";
   pace = (1000.0 / 60.0) * (1.0 / average_speed)
   minutes = math.floor(pace)
   seconds = math.floor((pace - minutes) * 60.0)
